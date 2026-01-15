@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build --webpack",
+    "build": "npm install --legacy-peer-deps && next build --webpack",
     "start": "next start",
     "lint": "next lint",
     "deploy": "vercel --prod"
@@ -12,7 +12,6 @@
   "dependencies": {
     "@react-three/drei": "^9.105.4",
     "@react-three/fiber": "^8.16.2",
-    "@sentry/nextjs": "^8.27.0",
     "@tabler/icons-react": "^3.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
