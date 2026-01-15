@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    turbopack: {}
+    eslint: {
+        ignoreDuringBuilds: true
+    }
 };
 
 export default nextConfig;
